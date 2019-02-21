@@ -11,7 +11,13 @@ exports.up = function(knex, Promise) {
       .references("id")
       .inTable("ingredients");
 
-    tbl.primary(["recipes_id", "ingredients_id"]);
+    tbl
+      .integer("image_id")
+      .notNullable()
+      .references("id")
+      .inTable("images");
+
+    tbl.primary(["recipes_id", "ingredients_id", "image_id"]);
   });
 };
 
