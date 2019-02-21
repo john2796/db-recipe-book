@@ -8,7 +8,7 @@
 
 [x] database modeling.
 [x] migration scripts.
-[x] seeding.
+[x] **seeding**
 [x] knex.\*\*\*\*
 
 ## Assignment
